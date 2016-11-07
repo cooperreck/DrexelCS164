@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+  <h1>Farmer Crossing the River</h1>
+  <p> What do you want to cross the river first?</p>
+  <table>
+    <tr>
+      <th><button onclick="moveFarmer()">Farmer</button></th>
+      <th><button onclick="moveGoat()">Goat</button></th>
+      <th><button onclick="moveCabbage()">Cabbage</button></th>
+      <th><button onclick="moveWolf()">Wolf</button></th>
+    </table>
+ 
+
+  <script>
+
+// left bank is 0, right is 1
+
+  var theGoat = new Object();
+    theGoat.bank = "0";
+  var theWolf = new Object();
+    theWolf.bank = "0";
+  var theCabbage = new Object();
+    theCabbage.bank = "0";
+  var theFarmer = new Object();
+    theFarmer.bank = "0";
+
+
+//Functions when called will change the state of the object from 0 -> 1 or 1 -> 0
+  function moveFarmer() {
+    if (theFarmer.bank = "0") {
+      theFarmer.bank = "1";
+    }
+    else if (theFarmer.bank = "1") {
+      theFarmer.bank = "0";
+    }
+  }
+
+  function moveGoat() {
+    if (theGoat.bank = "0") {
+      theGoat.bank = "1";
+    }
+    else if (theGoat.bank = "1") {
+      theGoat.bank = "0";
+    }
+  }
+
+  function moveCabbage() {
+    if (theCabbage.bank = "0") {
+      theCabbage.bank = "1";
+    }
+    else if (theCabbage.bank = "1") {
+      theCabbage.bank = "0";
+    }
+  }
+
+  function moveWolf() {
+    if (theWolf.bank = "0") {
+      theWolf.bank = "1";
+    }
+    else if (theWolf.bank = "1") {
+      theWolf.bank = "0";
+    }
+  }
+  </script>
+</body>
+</html>
